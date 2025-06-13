@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie List</h1>
+    
+    <div class="buttons">
+      <button onclick="searchMovies('Marvel')">Marvel Movie</button>
+      <button onclick="searchMovies('Comedy')">Funny Movie</button>
+      <button onclick="searchMovies('Animation')">Animation Movie</button>
+      <button onclick="searchMovies('Web Series')">Web Series Movie</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search here..." />
+      <button onclick="manualSearch()">🔍</button>
+    </div>
+
+    <div id="movieList" class="movie-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
